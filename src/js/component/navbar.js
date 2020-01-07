@@ -1,17 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Nav, Form, FormControl, Button } from "react-bootstrap";
 
 export const Navbar = () => {
 	return (
-		<nav className="navbar navbar-light bg-light mb-3">
-			<Link to="/">
-				<span className="navbar-brand mb-0 h1">React Boilerplate</span>
-			</Link>
-			<div className="ml-auto">
-				<Link to="/demo">
-					<button className="btn btn-primary">Check the Context in action</button>
-				</Link>
-			</div>
-		</nav>
+		<Navbar bg="light" expand="lg">
+			<Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+			<Navbar.Toggle aria-controls="basic-navbar-nav" />
+			<Navbar.Collapse id="basic-navbar-nav">
+				<Nav className="mr-auto">
+					<Nav.Link href="#home">Home</Nav.Link>
+					<Nav.Link href="#link">Link</Nav.Link>
+				</Nav>
+				<Form inline>
+					<FormControl type="text" placeholder="Search" className="mr-sm-2" />
+					<Button variant="outline-success">Search</Button>
+				</Form>
+			</Navbar.Collapse>
+		</Navbar>
 	);
 };
