@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Nav, Form, FormControl, Button } from "react-bootstrap";
+import { Nav, Form, FormControl, Button, Navbar } from "react-bootstrap";
 
-export const Navbar = () => {
+export const MyNavbar = () => {
 	return (
 		<Navbar bg="light" expand="lg">
 			<Navbar.Brand href="#home">Casa Cadena</Navbar.Brand>
