@@ -6,11 +6,11 @@ export const Home = () => (
 	<div>
 		<div className="parallax" />
 
+		<div className="logo">
+			<img src={petrico} />
+		</div>
 		<div className="text-center mt-5">
 			<h1>Bievenido a... CasaCadena</h1>
-			<p>
-				<img src={petrico} />
-			</p>
 		</div>
 
 		<div className="parallax" />
