@@ -8,7 +8,7 @@ import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
-import { Footer } from "./component/footer";
+import { Comofunciona } from "./component/Comofunciona";
 
 //create your first component
 export const Layout = () => {
@@ -22,12 +22,12 @@ export const Layout = () => {
 				<ScrollToTop>
 					<Navbar />
 					<Switch>
+						<Comofunciona />
 						<Route exact path="/" component={Home} />
 						<Route path="/demo" component={Demo} />
 						<Route path="/single/:theid" component={Single} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
-					<Footer />
 				</ScrollToTop>
 			</BrowserRouter>
 		</div>
