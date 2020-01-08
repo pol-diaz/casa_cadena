@@ -1,10 +1,18 @@
-import React, { Component } from "react";
+import { Card } from "react-bootstrap";
+import React from "react";
 
-export const Footer = () => (
-	<footer className="footer mt-auto py-3 text-center">
-		<p>
-			Made with <i className="fa fa-heart text-danger" /> by{" "}
-			<a href="http://www.4geeksacademy.com">4Geeks Academy</a>
-		</p>
-	</footer>
-);
+export const Comofunciona = props => {
+	return (
+		<Card style={{ width: "18rem" }}>
+			<Card.Img variant="top" src="holder.js/100px180" />
+
+			<Card.Body>
+				<Card.Title>Card Title</Card.Title>
+
+				<Card.Text>
+					{"Some quick example text to build on the card title and make up the bulk of the card's content."}
+				</Card.Text>
+			</Card.Body>
+		</Card>
+	);
+};
