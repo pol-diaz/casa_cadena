@@ -5,17 +5,20 @@ import { Nav, Form, FormControl, Button } from "react-bootstrap";
 export const Navbar = () => {
 	return (
 		<Navbar bg="light" expand="lg">
-			<Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+			<Navbar.Brand href="#home">Casa Cadena</Navbar.Brand>
 			<Navbar.Toggle aria-controls="basic-navbar-nav" />
 			<Navbar.Collapse id="basic-navbar-nav">
 				<Nav className="mr-auto">
-					<Nav.Link href="#home">Home</Nav.Link>
-					<Nav.Link href="#link">Link</Nav.Link>
+					<Nav.Link href="#como-funciona">¿Cómo Funciona?</Nav.Link>
+					<Nav.Link href="#comisiones">Comisiones</Nav.Link>
+					<Nav.Link href="#servicios">Servicios</Nav.Link>
+					<Nav.Link href="#inicia-sesion">Inicia Sesión</Nav.Link>
+					<span>
+						<a href="#registrate" className="registrate">
+							Regístrate
+						</a>
+					</span>
 				</Nav>
-				<Form inline>
-					<FormControl type="text" placeholder="Search" className="mr-sm-2" />
-					<Button variant="outline-success">Search</Button>
-				</Form>
 			</Navbar.Collapse>
 		</Navbar>
 	);
