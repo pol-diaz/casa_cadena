@@ -9,6 +9,7 @@ import injectContext from "./store/appContext";
 
 import { MyNavbar } from "./component/MyNavbar";
 import { Comofunciona } from "./component/Comofunciona";
+import { MyFooter } from "./component/MyFooter";
 
 //create your first component
 export const Layout = () => {
@@ -28,6 +29,7 @@ export const Layout = () => {
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
 					<Comofunciona />
+					<MyFooter />
 				</ScrollToTop>
 			</BrowserRouter>
 		</div>
