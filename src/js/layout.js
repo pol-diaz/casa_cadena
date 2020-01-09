@@ -20,8 +20,7 @@ export const Layout = () => {
 	return (
 		<div className="d-flex flex-column h-100">
 			<BrowserRouter>
-				<ScrollToTop>
-					<MyNavbar />
+				<scrollToTop>
 					<Switch>
 						<Route exact path="/" component={Home} />
 						<Route path="/demo" component={Demo} />
@@ -30,8 +29,7 @@ export const Layout = () => {
 					</Switch>
 					<Comofunciona />
 					<MyFooter />
->>>>>>> Footer added without styles nor text
-				</ScrollToTop>
+				</scrollToTop>
 			</BrowserRouter>
 		</div>
 	);
