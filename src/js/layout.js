@@ -20,17 +20,14 @@ export const Layout = () => {
 	return (
 		<div className="d-flex flex-column h-100">
 			<BrowserRouter>
-				<ScrollToTop>
-					<MyNavbar />
+				<scrollToTop>
 					<Switch>
 						<Route exact path="/" component={Home} />
 						<Route path="/demo" component={Demo} />
 						<Route path="/single/:theid" component={Single} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
-					<Comofunciona />
-					<MyFooter />
-				</ScrollToTop>
+				</scrollToTop>
 			</BrowserRouter>
 		</div>
 	);
