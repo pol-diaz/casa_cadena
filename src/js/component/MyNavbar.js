@@ -1,11 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Nav, Form, FormControl, Button, Navbar } from "react-bootstrap";
+import logo from "../../img/logo versiones-06.png";
 
 export const MyNavbar = () => {
 	return (
 		<Navbar bg="light" expand="lg">
-			<Navbar.Brand href="#home">Casa Cadena</Navbar.Brand>
+			<Navbar.Brand href="#home">
+				<img src={logo} style={{ width: 500, height: 450 }} />
+			</Navbar.Brand>
 			<Navbar.Toggle aria-controls="basic-navbar-nav" />
 			<Navbar.Collapse id="basic-navbar-nav">
 				<Nav className="mr-auto">
