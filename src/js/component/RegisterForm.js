@@ -1,9 +1,8 @@
 import React from "react";
 
-export const RegisterView = () => {
+export const RegisterForm = () => {
     return (
         <div>
-            <MyNavbar />
             <div>
                 <Form>
                     <Form.Group controlId="formBasicEmail">
@@ -13,7 +12,7 @@ export const RegisterView = () => {
                         We'll never share your email with anyone else.
                         </Form.Text>
                     </Form.Group>
-                    
+
                     <Form.Group controlId="formBasicPassword">
                         <Form.Label>Password</Form.Label>
                         <Form.Control type="password" placeholder="Password" />
@@ -22,11 +21,10 @@ export const RegisterView = () => {
                         <Form.Check type="checkbox" label="Check me out" />
                     </Form.Group>
                     <Button variant="primary" type="submit">
-                        Submit
+                        Sign up
                     </Button>
                 </Form>
             </div>
-            <MyFooter />
         </div>
     );
 }

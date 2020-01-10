@@ -6,9 +6,9 @@ import logo from "../../img/logo versiones-06.png";
 export const MyNavbar = () => {
 	return (
 		<Navbar bg="light" expand="lg">
-			<Navbar.Brand href="#home">
+			<Navbar.Brand.Link to="/">
 				<img src={logo} style={{ width: 500, height: 450 }} />
-			</Navbar.Brand>
+			</Navbar.Brand.Link>
 			<Navbar.Toggle aria-controls="basic-navbar-nav" />
 			<Navbar.Collapse id="basic-navbar-nav">
 				<Nav className="mr-auto">
@@ -16,11 +16,7 @@ export const MyNavbar = () => {
 					<Nav.Link href="#comisiones">Comisiones</Nav.Link>
 					<Nav.Link href="#servicios">Servicios</Nav.Link>
 					<Nav.Link href="#inicia-sesion">Inicia Sesión</Nav.Link>
-					<span>
-						<a href="#registrate" className="registrate">
-							Regístrate
-						</a>
-					</span>
+					<Nav.Link to="/register">Register</Nav.Link>
 				</Nav>
 			</Navbar.Collapse>
 		</Navbar>
