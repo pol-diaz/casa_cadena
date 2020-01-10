@@ -1,14 +1,9 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import ScrollToTop from "./component/scrollToTop";
-
-import { Home } from "./views/homeView";
+import { HomeView } from "./views/homeView";
 import { RegisterView } from "./views/registerView";
-import { Single } from "./views/single";
 import injectContext from "./store/appContext";
-
 import { MyNavbar } from "./component/MyNavbar";
-import { Comofunciona } from "./component/Comofunciona";
 import { MyFooter } from "./component/MyFooter";
 
 //create your first component

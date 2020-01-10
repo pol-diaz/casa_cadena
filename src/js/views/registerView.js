@@ -1,10 +1,10 @@
 import React from "react";
-import RegisterForm from "../component/RegisterForm"
+import { RegisterForm } from "../component/RegisterForm";
 
 export const RegisterView = () => {
-    return (
-        <div>
-            <RegisterForm />
-        </div>
-    );
-}
+	return (
+		<div>
+			<RegisterForm />
+		</div>
+	);
+};
