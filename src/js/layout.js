@@ -5,6 +5,7 @@ import { RegisterView } from "./views/registerView";
 import injectContext from "./store/appContext";
 import { MyNavbar } from "./component/MyNavbar";
 import { MyFooter } from "./component/MyFooter";
+import ScrollToTop from "./component/ScrollToTop";
 
 //create your first component
 export const Layout = () => {
@@ -15,7 +16,7 @@ export const Layout = () => {
 	return (
 		<div className="d-flex flex-column h-100">
 			<BrowserRouter>
-				<scrollToTop>
+				<ScrollToTop>
 					<MyNavbar />
 					<Switch>
 						<Route exact path="/" component={HomeView} />
@@ -23,7 +24,7 @@ export const Layout = () => {
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
 					<MyFooter />
-				</scrollToTop>
+				</ScrollToTop>
 			</BrowserRouter>
 		</div>
 	);
