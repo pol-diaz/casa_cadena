@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Nav, Form, FormControl, Button, Navbar } from "react-bootstrap";
-import { logo } from "../../img/logo versiones-06.png";
+import { logo } from "../../img/logo-icon-white-name-white.png";
 
 export const MyNavbar = () => {
 	return (
 		<Navbar bg="light" expand="lg">
 			<Navbar.Brand>
 				<Link to="/">
-					<img src={logo} style={{ width: 200 + "px", height: 150 + "px" }} />
+					<img src={logo} style={{ width: 100 + "px", height: 60 + "px" }} />
 				</Link>
 			</Navbar.Brand>
 			<Navbar.Toggle aria-controls="basic-navbar-nav" />

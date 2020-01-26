@@ -1,24 +1,14 @@
 import React from "react";
-import petrico from "../../img/descarga.jpeg";
 import "../../styles/home.scss";
-import { Comofunciona } from "../component/Comofunciona";
-import { Carruselazo } from "../component/Carruselazo";
+import { MyCarousel } from "../component/MyCarousel";
+import { MyNavbar } from "../component/MyNavbar";
 
 export const HomeView = () => (
 	<div>
-		<div className="parallax" />
-		<div className="logo">
-			<img src={petrico} />
+		<MyNavbar />
+		<MyCarousel />
+		<div className="text-center banner-styles">
+			<h1 className="banner-h1-styles">Bievenido a... CasaCadena</h1>
 		</div>
-		<div>
-			<Carruselazo />
-		</div>
-		<div className="text-center mt-5">
-			<h1>Bievenido a... CasaCadena</h1>
-		</div>
-		<div>
-			<Comofunciona />
-		</div>
-		<div className="parallax" />
 	</div>
 );

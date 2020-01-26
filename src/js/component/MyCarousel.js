@@ -1,9 +1,9 @@
 import { Card } from "react-bootstrap";
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
-export const Carruselazo = props => {
+export const MyCarousel = props => {
 	return (
-		<div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
+		<div id="carouselExampleControls" className="carousel-styles" data-ride="carousel">
 			<div className="carousel-inner">
 				<div className="carousel-item active">
 					<img
