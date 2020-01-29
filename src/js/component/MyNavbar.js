@@ -12,11 +12,11 @@ export const MyNavbar = () => {
 			<Navbar.Toggle aria-controls="basic-navbar-nav" />
 			<Navbar.Collapse id="basic-navbar-nav">
 				<Nav className="mr-auto">
-					<Nav.Link href="#que-hacemos">{"¿Qué Hacemos?"}</Nav.Link>
+					<Nav.Link href="#quehacemos">{"¿Qué Hacemos?"}</Nav.Link>
 					<Nav.Link href="#como-funciona">{"¿Cómo Funciona?"}</Nav.Link>
 					<Nav.Link href="#tutoriales">{"Tutoriales"}</Nav.Link>
-					<Nav.Link href="#inicia-sesion">{"Inicia Sesión"}</Nav.Link>
-					<Nav.Link href="#registrate">{"Regístrate"}</Nav.Link>
+					<Nav.Link href="/loginView">{"Inicia Sesión"}</Nav.Link>
+					<Nav.Link href="/register">{"Regístrate"}</Nav.Link>
 				</Nav>
 			</Navbar.Collapse>
 		</Navbar>
