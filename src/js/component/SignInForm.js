@@ -1,12 +1,11 @@
 import React from "react";
-import "../../styles/home.scss";
 import { Col, Form, InputGroup, Button } from "react-bootstrap";
 import { MyCarousel } from "../component/MyCarousel";
 import { MyNavbar } from "../component/MyNavbar";
 import { MyFooter } from "../component/MyFooter";
 
-export const LoginView = () => {
-	function LoginView() {
+export const SignInForm = () => {
+	function SignInForm() {
 		const [validated, setValidated] = useState(false);
 
 		const handleSubmit = event => {
@@ -17,7 +16,7 @@ export const LoginView = () => {
 			}
 
 			setValidated(true);
-			render(<LoginView />);
+			render(<SignInForm />);
 		};
 	}
 

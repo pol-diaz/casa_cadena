@@ -15,7 +15,7 @@ export const MyNavbar = () => {
 					<Nav.Link href="#quehacemos">{"¿Qué Hacemos?"}</Nav.Link>
 					<Nav.Link href="#como-funciona">{"¿Cómo Funciona?"}</Nav.Link>
 					<Nav.Link href="#tutoriales">{"Tutoriales"}</Nav.Link>
-					<Nav.Link href="/loginView">{"Inicia Sesión"}</Nav.Link>
+					<Nav.Link href="/signInView">{"Inicia Sesión"}</Nav.Link>
 					<Nav.Link href="/register">{"Regístrate"}</Nav.Link>
 				</Nav>
 			</Navbar.Collapse>
