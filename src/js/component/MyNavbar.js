@@ -12,7 +12,6 @@ export const MyNavbar = () => {
 			<Navbar.Toggle aria-controls="basic-navbar-nav" />
 			<Navbar.Collapse id="basic-navbar-nav">
 				<Nav className="mr-auto">
-<<<<<<< HEAD
 					<Nav.Link className="cc-navlink" href="#que-hacemos">
 						{"¿Qué Hacemos?"}
 					</Nav.Link>
@@ -28,13 +27,8 @@ export const MyNavbar = () => {
 					<Nav.Link className="cc-navlink" href="#registrate">
 						{"Regístrate"}
 					</Nav.Link>
-=======
-					<Nav.Link href="#quehacemos">{"¿Qué Hacemos?"}</Nav.Link>
-					<Nav.Link href="#como-funciona">{"¿Cómo Funciona?"}</Nav.Link>
-					<Nav.Link href="#tutoriales">{"Tutoriales"}</Nav.Link>
-					<Nav.Link href="/loginView">{"Inicia Sesión"}</Nav.Link>
-					<Nav.Link href="/register">{"Regístrate"}</Nav.Link>
->>>>>>> cd8e8fdde2be90b5427b914d75b5f68f64d1320e
+
+
 				</Nav>
 			</Navbar.Collapse>
 		</Navbar>
