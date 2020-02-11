@@ -1,11 +1,12 @@
 import { Card } from "react-bootstrap";
 import React from "react";
+import contact from "../../img/card-contact-icon.png";
 import "bootstrap/dist/css/bootstrap.css";
 export const MyCards = props => {
 	return (
 		<div>
 			<Card style={{ width: 18 + "rem" }}>
-				<Card.Img variant="top" src="holder.js/100px180" />
+				<Card.Img variant="top" src={contact} />
 				<Card.Body>
 					<Card.Title>Card Title</Card.Title>
 					<Card.Text>
