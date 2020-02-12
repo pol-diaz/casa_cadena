@@ -27,8 +27,6 @@ export const MyNavbar = () => {
 					<Nav.Link className="cc-navlink" href="#registrate">
 						{"Regístrate"}
 					</Nav.Link>
-
-
 				</Nav>
 			</Navbar.Collapse>
 		</Navbar>
