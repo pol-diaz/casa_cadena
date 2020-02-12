@@ -1,6 +1,6 @@
 import { Card } from "react-bootstrap";
 import React from "react";
-import contact from "../../img/card-contact-icon.png";
+import contact from "../../img/logo-icon-black.png";
 import "bootstrap/dist/css/bootstrap.css";
 export const MyCards = props => {
 	return (

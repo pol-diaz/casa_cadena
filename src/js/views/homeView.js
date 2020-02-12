@@ -13,5 +13,6 @@ export const HomeView = () => (
 			<h1 className="banner-h1-styles">Bievenido a... CasaCadena</h1>
 		</div>
 		<MyCards />
+		<MyFooter />
 	</div>
 );
