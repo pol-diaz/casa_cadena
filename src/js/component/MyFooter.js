@@ -4,7 +4,7 @@ import { Jumbotron, Container } from "react-bootstrap";
 
 export const MyFooter = () => {
 	return (
-		<footer className="footer-styles">
+		<footer className="footer-styles mt-5">
 			<Jumbotron className="mb-0 jumbotron-footer-styles" fluid>
 				<Container>
 					<h3>Casa Cadena, LLC</h3>
