@@ -11,7 +11,7 @@ export const HomeView = () => (
 		<MyNavbar />
 		<MyCarousel />
 		<GetStarted />
-		<MyCards titulo="hola que tal" />
+		<MyCards />
 		<MyFooter />
 	</div>
 );
