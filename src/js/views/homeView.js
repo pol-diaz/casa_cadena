@@ -5,6 +5,7 @@ import { MyNavbar } from "../component/MyNavbar";
 import { MyCards } from "../component/MyCards";
 import { MyFooter } from "../component/MyFooter";
 import { GetStarted } from "../component/GetStarted";
+import { JoinButton } from "../component/JoinButton";
 
 export const HomeView = () => (
 	<div>

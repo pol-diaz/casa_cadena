@@ -22,6 +22,8 @@ body {
 }
 .get-started-button {
     display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
     padding: .75rem 1.25rem;
     border-radius: 10rem;
     border: none !important;
@@ -63,7 +65,9 @@ body {
         }
     }
 }
-
+.get-started-styles{
+    background-color: white;
+}
 .container-GetStarted{
 text-align: center;
 }
@@ -83,6 +87,21 @@ background-color: #fff !important;
   background-color: white;
   margin: 0px;
 }
+.card-img-styles {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.card-title-styles {
+    text-align: center;
+    color: #1DD36C;
+}
+.card-description-styles {
+    text-align: center;
+    color: #6D1DD3;
+}
 .banner-h1-styles {
   margin: 0px;
   padding: 10% 0% 0% 0%;
@@ -101,6 +120,11 @@ background-color: #fff !important;
 }
 .mailto-styles {
     color:white;
+    transition: color 1s;
+}
+.mailto-styles:hover {
+    color: #1DD36C;
+    text-decoration: none;
 }
 // .parallax {
 //   /* The image used */
