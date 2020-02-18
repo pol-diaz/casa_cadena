@@ -3,7 +3,7 @@
 }
 body {
   height: 100%;
-  background-color: white;
+  background-color: white !important;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -130,6 +130,24 @@ font-family: Helvetica;
     margin-top: 1rem;
     width: 2.5rem;
 }
+.logo-styles {
+    width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.sign-in-title-styles {
+    text-align: center;
+    color: #1DD36C;
+}
+.sign-in-description-text-styles {
+    text-align: center;
+    color: #6D1DD3;
+}
+.sign-in-button-styles {
+    text-align: center;
+}
+
 // .parallax {
 //   /* The image used */
 //   background-image: url('http://www.hdfondos.org/file/17849/728x410/16:9/new-york-manhattan-wall-street_806041814.jpg');

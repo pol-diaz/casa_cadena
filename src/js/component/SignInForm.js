@@ -26,19 +26,13 @@ export const SignInForm = () => {
 			<Card.Body>
 				<Form>
 					<Form.Group controlId="formBasicEmail">
-						<Form.Label>Email address</Form.Label>
-						<Form.Control type="email" placeholder="Enter email" />
+						<Form.Control type="email" placeholder="Nombre de usuario o correo" />
 					</Form.Group>
-
 					<Form.Group controlId="formBasicPassword">
-						<Form.Label>Password</Form.Label>
-						<Form.Control type="password" placeholder="Password" />
-					</Form.Group>
-					<Form.Group controlId="formBasicCheckbox">
-						<Form.Check type="checkbox" label="Check me out" />
+						<Form.Control type="password" placeholder="Contraseña" />
 					</Form.Group>
 					<Button variant="primary" type="submit" className="sign-in-botton-styles">
-						Submit
+						INICIAR SESIÓN
 					</Button>
 				</Form>
 			</Card.Body>
