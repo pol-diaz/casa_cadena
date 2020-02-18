@@ -9,8 +9,8 @@ export const MyCards = props => {
 	return (
 		<div className="container">
 			<div className="row">
-				<div className="col-12 col-md-3 my-3">
-					<Card>
+				<div className="col-10 col-md-3 my-3 mx-auto">
+					<Card className="border-0">
 						<Card.Img className="card-img-styles" variant="top" src={profile} />
 						<Card.Body>
 							<Card.Title className="card-title-styles">{"titulo"}</Card.Title>
@@ -22,8 +22,8 @@ export const MyCards = props => {
 						</Card.Body>
 					</Card>
 				</div>
-				<div className="col-12 col-md-3 my-3">
-					<Card>
+				<div className="col-10 col-md-3 my-3 mx-auto">
+					<Card className="border-0">
 						<Card.Img className="card-img-styles" variant="top" src={phone} />
 						<Card.Body>
 							<Card.Title className="card-title-styles">{"titulo"}</Card.Title>
@@ -35,8 +35,8 @@ export const MyCards = props => {
 						</Card.Body>
 					</Card>
 				</div>
-				<div className="col-12 col-md-3 my-3">
-					<Card>
+				<div className="col-10 col-md-3 my-3 mx-auto">
+					<Card className="border-0">
 						<Card.Img className="card-img-styles" variant="top" src={money} />
 						<Card.Body>
 							<Card.Title className="card-title-styles">{"titulo"}</Card.Title>
@@ -48,8 +48,8 @@ export const MyCards = props => {
 						</Card.Body>
 					</Card>
 				</div>
-				<div className="col-12 col-md-3 my-3">
-					<Card>
+				<div className="col-10 col-md-3 my-3 mx-auto">
+					<Card className="border-0">
 						<Card.Img className="card-img-styles" variant="top" src={handshake} />
 						<Card.Body>
 							<Card.Title className="card-title-styles">{"titulo"}</Card.Title>
