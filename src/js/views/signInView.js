@@ -18,8 +18,8 @@ export const SignInView = () => (
 			</a>
 		</div>
 		<SignInForm />
-		<a className="" href="#">
-			¿Olvidaste la Contraseña?
+		<a className="reset-password" href="#">
+			¿Olvidaste la Contraseña o Usuario?
 		</a>
 		<MyFooter />
 	</div>
