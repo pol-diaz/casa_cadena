@@ -26,10 +26,10 @@ export const SignInForm = () => {
 			<Card.Body>
 				<Form>
 					<Form.Group controlId="formBasicEmail">
-						<Form.Control type="email" placeholder="Nombre de usuario o correo" />
+						<Form.Control className="signin-text" type="email" placeholder="Nombre de usuario o correo" />
 					</Form.Group>
 					<Form.Group controlId="formBasicPassword">
-						<Form.Control type="password" placeholder="Contraseña" />
+						<Form.Control className="signin-text" type="password" placeholder="Contraseña" />
 					</Form.Group>
 					<Button variant="primary" type="submit" className="sign-in-botton-styles">
 						INICIAR SESIÓN
