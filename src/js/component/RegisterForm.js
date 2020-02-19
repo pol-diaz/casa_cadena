@@ -31,7 +31,7 @@ export const RegisterForm = () => {
 					<Form.Group controlId="formBasicPassword">
 						<Form.Control type="password" placeholder="Ciudad" />
 					</Form.Group>
-					<Form.Group as={Col} controlId="formGridState">
+					<Form.Group controlId="formGridState">
 						<Form.Control as="select">
 							<option>Venezuela</option>
 							<option>Colombia</option>
