@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Col, Form, InputGroup, Button } from "react-bootstrap";
+import { Col, Form, InputGroup, Button, Card } from "react-bootstrap";
 
 export const RegisterForm = () => {
 	// function FormExample() {
@@ -16,60 +16,40 @@ export const RegisterForm = () => {
 	};
 
 	return (
-		<Form noValidate validated={validated} onSubmit={handleSubmit}>
-			<Form.Row>
-				<Form.Group as={Col} md="4" controlId="validationCustom01">
-					<Form.Label>First name</Form.Label>
-					<Form.Control required type="text" placeholder="First name" defaultValue="" />
-					<Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-				</Form.Group>
-				<Form.Group as={Col} md="4" controlId="validationCustom02">
-					<Form.Label>Last name</Form.Label>
-					<Form.Control required type="text" placeholder="Last name" defaultValue="" />
-					<Form.Control.Feedback>Looks good!</Form.Control.Feedback>
-				</Form.Group>
-				<Form.Group as={Col} md="4" controlId="validationCustomUsername">
-					<Form.Label>Username</Form.Label>
-					<InputGroup>
-						<InputGroup.Prepend>
-							<InputGroup.Text id="inputGroupPrepend">@</InputGroup.Text>
-						</InputGroup.Prepend>
-						<Form.Control
-							type="text"
-							placeholder="Username"
-							aria-describedby="inputGroupPrepend"
+		<Card style={{ width: "18rem" }}>
+			<Card.Body>
+				<Form noValidate validated={validated} onSubmit={handleSubmit}>
+					<Form.Group controlId="formBasicEmail">
+						<Form.Control type="email" placeholder="Email" />
+					</Form.Group>
+					<Form.Group controlId="formBasicPassword">
+						<Form.Control type="password" placeholder="Nombre de Usuario" />
+					</Form.Group>
+					<Form.Group controlId="formBasicPassword">
+						<Form.Control type="password" placeholder="Contraseña" />
+					</Form.Group>
+					<Form.Group controlId="formBasicPassword">
+						<Form.Control type="password" placeholder="Ciudad" />
+					</Form.Group>
+					<Form.Group as={Col} controlId="formGridState">
+						<Form.Control as="select">
+							<option>Venezuela</option>
+							<option>Colombia</option>
+						</Form.Control>
+					</Form.Group>
+					<Form.Group>
+						<Form.Check
 							required
+							label="Al continuar estoy de acerdo con las Condiciones de Servicio y Politica de Privacidad"
+							feedback="Debes aceptar los términos y condiciones para registrarte"
 						/>
-						<Form.Control.Feedback type="invalid">Please choose a username.</Form.Control.Feedback>
-					</InputGroup>
-				</Form.Group>
-			</Form.Row>
-			<Form.Row>
-				<Form.Group as={Col} md="6" controlId="validationCustom03">
-					<Form.Label>Email Address</Form.Label>
-					<Form.Control type="text" placeholder="Email Address" required />
-					<Form.Control.Feedback type="invalid">Please provide a valid email address.</Form.Control.Feedback>
-				</Form.Group>
-				<Form.Group as={Col} md="3" controlId="validationCustom04">
-					<Form.Label>Password</Form.Label>
-					<Form.Control type="text" placeholder="State" required />
-					<Form.Control.Feedback type="invalid">Please provide a valid password.</Form.Control.Feedback>
-				</Form.Group>
-				<Form.Group as={Col} md="3" controlId="validationCustom05">
-					<Form.Label>Confirm your password</Form.Label>
-					<Form.Control type="text" placeholder="Zip" required />
-					<Form.Control.Feedback type="invalid">Please provide a valid password.</Form.Control.Feedback>
-				</Form.Group>
-			</Form.Row>
-			<Form.Group>
-				<Form.Check
-					required
-					label="Agree to terms and conditions"
-					feedback="You must agree before submitting."
-				/>
-			</Form.Group>
-			<Button type="submit">Sign up</Button>
-		</Form>
+					</Form.Group>
+					<Button variant="primary" type="submit" className="sign-in-botton-styles">
+						CREAR CUENTA
+					</Button>
+				</Form>
+			</Card.Body>
+		</Card>
 	);
 	// }
 
