@@ -18,21 +18,21 @@ export const RegisterForm = () => {
 	return (
 		<Card style={{ width: "18rem" }}>
 			<Card.Body>
-				<Form noValidate validated={validated} onSubmit={handleSubmit}>
+				<Form action="{{ url_for('casacadena/submit_register') }}" method="post">
 					<Form.Group controlId="formBasicEmail">
-						<Form.Control type="email" placeholder="Email" />
+						<Form.Control type="email" placeholder="Email" name="signin_email" />
 					</Form.Group>
 					<Form.Group controlId="formBasicPassword">
-						<Form.Control type="password" placeholder="Nombre de Usuario" />
+						<Form.Control type="password" placeholder="Nombre de Usuario" name="signin_username"  />
 					</Form.Group>
 					<Form.Group controlId="formBasicPassword">
-						<Form.Control type="password" placeholder="Contraseña" />
+						<Form.Control type="password" placeholder="Contraseña" name="signin_password" />
 					</Form.Group>
 					<Form.Group controlId="formBasicPassword">
-						<Form.Control type="password" placeholder="Ciudad" />
+						<Form.Control type="password" placeholder="Ciudad" name="signin_city"  />
 					</Form.Group>
 					<Form.Group controlId="formGridState">
-						<Form.Control as="select">
+						<Form.Control as="select" name="signin_country" >
 							<option>Venezuela</option>
 							<option>Colombia</option>
 						</Form.Control>
