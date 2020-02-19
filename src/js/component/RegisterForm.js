@@ -23,13 +23,13 @@ export const RegisterForm = () => {
 						<Form.Control type="email" placeholder="Email" />
 					</Form.Group>
 					<Form.Group controlId="formBasicPassword">
-						<Form.Control type="password" placeholder="Nombre de Usuario" />
+						<Form.Control type="text" placeholder="Nombre de Usuario" />
 					</Form.Group>
 					<Form.Group controlId="formBasicPassword">
 						<Form.Control type="password" placeholder="Contraseña" />
 					</Form.Group>
 					<Form.Group controlId="formBasicPassword">
-						<Form.Control type="password" placeholder="Ciudad" />
+						<Form.Control type="text" placeholder="Ciudad" />
 					</Form.Group>
 					<Form.Group as={Col} controlId="formGridState">
 						<Form.Control as="select">
