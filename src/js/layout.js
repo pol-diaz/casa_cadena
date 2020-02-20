@@ -5,6 +5,7 @@ import { RegisterView } from "./views/registerView";
 import { SignInView } from "./views/signInView";
 import injectContext from "./store/appContext";
 import ScrollToTop from "./component/ScrollToTop";
+import { resetPasswordView } from "./views/resetPasswordView";
 
 //create your first component
 export const Layout = () => {
@@ -20,6 +21,7 @@ export const Layout = () => {
 						<Route exact path="/" component={HomeView} />
 						<Route path="/register" component={RegisterView} />
 						<Route path="/signInView" component={SignInView} />
+						<Route path="/resetPassword" component={resetPasswordView} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
 					<Route path="/resetPassword" component={resetPasswordView} />{" "}
