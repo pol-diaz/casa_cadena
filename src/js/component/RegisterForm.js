@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import { Col, Form, InputGroup, Button, Card } from "react-bootstrap";
+import axios from "axios";
 
 export const RegisterForm = () => {
 	// function FormExample() {
 	const [register, setRegister] = useState({
-		signin_email: "",
-		signin_username: "",
-		signin_cedula: "",
-		signin_password: "",
-		signin_city: ""
+		register_email: "",
+		register_username: "",
+		register_document_id: "",
+		register_password: "",
+		register_city: ""
 	});
-	const [validated, setValidated] = useState(false);
+	const [error, seterror] = useState(false);
 
 	const handleChange = e => {
 		setRegister({
@@ -21,13 +22,26 @@ export const RegisterForm = () => {
 	};
 
 	const handleSubmit = event => {
-		const form = event.currentTarget;
-		if (form.checkValidity() === false) {
-			event.preventDefault();
-			event.stopPropagation();
-		}
+		e.preventDefault();
+        //Validamos que los campos esten llenos 
+        // if (nombrePlatillo === '' || precioPlatillo === '' || categoria === '') {
+        //     guardarError(true)
+        //     return;
+        // }
+        // guardarError(false);
+        // Creamos el nuevo producto, es recomendable meterlo en un try catch
+        try {
+            const url = `http://localhost:4000/restaurant`;
+            const resultado = await axios.post(url, register)
+            if (resultado.status === 201) {
+                alert('todo fino');
+                
+            }
+        } catch (err) {
+            alert('todo fallo');
+        }
 
-		setValidated(true);
+		
 	};
 
 	return (
@@ -35,29 +49,29 @@ export const RegisterForm = () => {
 			<Card.Body>
 				<Form onSubmit={handleSubmit}>
 					<Form.Group controlId="formBasicEmail">
-						<Form.Control type="email" placeholder="Email" name="signin_email" onChange={handleChange} />
+						<Form.Control type="email" placeholder="Email" name="register_email" onChange={handleChange} />
 					</Form.Group>
 					<Form.Group controlId="formBasicuser">
 						<Form.Control
 							type="text"
 							placeholder="Nombre de Usuario"
-							name="signin_username"
+							name="register_username"
 							onChange={handleChange}
 						/>
 					</Form.Group>
 					<Form.Group controlId="formBasicuser">
-						<Form.Control type="text" placeholder="Cedula" name="signin_cedula" onChange={handleChange} />
+						<Form.Control type="text" placeholder="Cedula" name="register_document_id" onChange={handleChange} />
 					</Form.Group>
 					<Form.Group controlId="formBasicpassword">
 						<Form.Control
 							type="password"
 							placeholder="Contraseña"
-							name="signin_password"
+							name="register_password"
 							onChange={handleChange}
 						/>
 					</Form.Group>
 					<Form.Group controlId="formBasiccity">
-						<Form.Control type="text" placeholder="Ciudad" name="signin_city" onChange={handleChange} />
+						<Form.Control type="text" placeholder="Ciudad" name="register_city" onChange={handleChange} />
 					</Form.Group>
 					<Form.Group controlId="formGridState">
 						<Form.Control as="select" name="signin_country">
