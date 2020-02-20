@@ -5,10 +5,10 @@ export const RegisterForm = () => {
 	// function FormExample() {
 	const [register, setRegister] = useState({
 		signin_email: "",
-		username: "",
-		cedula: "",
-		password: "",
-		city: ""
+		signin_username: "",
+		signin_cedula: "",
+		signin_password: "",
+		signin_city: ""
 	});
 	const [validated, setValidated] = useState(false);
 
@@ -17,6 +17,7 @@ export const RegisterForm = () => {
 			...register,
 			[e.target.name]: e.target.value
 		});
+		console.log(register);
 	};
 
 	const handleSubmit = event => {
@@ -32,21 +33,31 @@ export const RegisterForm = () => {
 	return (
 		<Card style={{ width: "18rem" }}>
 			<Card.Body>
-				<Form onSubmit={this.handleSubmit}>
+				<Form onSubmit={handleSubmit}>
 					<Form.Group controlId="formBasicEmail">
 						<Form.Control type="email" placeholder="Email" name="signin_email" onChange={handleChange} />
 					</Form.Group>
 					<Form.Group controlId="formBasicuser">
-						<Form.Control type="text" placeholder="Nombre de Usuario" name="signin_username" />
+						<Form.Control
+							type="text"
+							placeholder="Nombre de Usuario"
+							name="signin_username"
+							onChange={handleChange}
+						/>
 					</Form.Group>
 					<Form.Group controlId="formBasicuser">
-						<Form.Control type="text" placeholder="Cedula" name="signin_cedula" />
+						<Form.Control type="text" placeholder="Cedula" name="signin_cedula" onChange={handleChange} />
 					</Form.Group>
 					<Form.Group controlId="formBasicpassword">
-						<Form.Control type="password" placeholder="Contraseña" name="signin_password" />
+						<Form.Control
+							type="password"
+							placeholder="Contraseña"
+							name="signin_password"
+							onChange={handleChange}
+						/>
 					</Form.Group>
 					<Form.Group controlId="formBasiccity">
-						<Form.Control type="text" placeholder="Ciudad" name="signin_city" />
+						<Form.Control type="text" placeholder="Ciudad" name="signin_city" onChange={handleChange} />
 					</Form.Group>
 					<Form.Group controlId="formGridState">
 						<Form.Control as="select" name="signin_country">
