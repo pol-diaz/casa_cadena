@@ -22,6 +22,7 @@ export const Layout = () => {
 						<Route path="/signInView" component={SignInView} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
+					<Route path="/resetPassword" component={resetPasswordView} />{" "}
 				</ScrollToTop>
 			</BrowserRouter>
 		</div>

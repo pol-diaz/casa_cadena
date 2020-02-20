@@ -3,7 +3,21 @@ import { Col, Form, InputGroup, Button, Card } from "react-bootstrap";
 
 export const RegisterForm = () => {
 	// function FormExample() {
+	const [register, setRegister] = useState({
+		signin_email: "",
+		username: "",
+		cedula: "",
+		password: "",
+		city: ""
+	});
 	const [validated, setValidated] = useState(false);
+
+	const handleChange = e => {
+		setRegister({
+			...register,
+			[e.target.name]: e.target.value
+		});
+	};
 
 	const handleSubmit = event => {
 		const form = event.currentTarget;
@@ -18,9 +32,9 @@ export const RegisterForm = () => {
 	return (
 		<Card style={{ width: "18rem" }}>
 			<Card.Body>
-				<Form action="{{ url_for('casacadena/submit_register') }}" method="post">
+				<Form onSubmit={this.handleSubmit}>
 					<Form.Group controlId="formBasicEmail">
-						<Form.Control type="email" placeholder="Email" name="signin_email" />
+						<Form.Control type="email" placeholder="Email" name="signin_email" onChange={handleChange} />
 					</Form.Group>
 					<Form.Group controlId="formBasicuser">
 						<Form.Control type="text" placeholder="Nombre de Usuario" name="signin_username" />
