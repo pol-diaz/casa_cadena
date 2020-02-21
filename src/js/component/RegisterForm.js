@@ -44,7 +44,7 @@ export const RegisterForm = () => {
 							feedback="Debes aceptar los términos y condiciones para registrarte"
 						/>
 					</Form.Group>
-					<Button variant="primary" type="submit" className="sign-in-botton-styles">
+					<Button variant="primary" type="submit" className="sign-in-botton-styles" href="/user-registered">
 						CREAR CUENTA
 					</Button>
 				</Form>
