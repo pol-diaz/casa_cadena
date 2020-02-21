@@ -25,7 +25,11 @@ export const ResetPasswordForm = () => {
 					<Form.Group controlId="formBasicEmail">
 						<Form.Control className="signin-text" type="email" placeholder="Correo electrónico" />
 					</Form.Group>
-					<Button variant="primary" type="submit" className="reset-password-button">
+					<Button
+						variant="primary"
+						type="submit"
+						className="reset-password-button"
+						href="/resetPassword-emailSent">
 						RESETEAR CLAVE
 					</Button>
 				</Form>
