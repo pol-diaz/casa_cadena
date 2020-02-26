@@ -67,16 +67,19 @@ body {
     border-bottom: #1DD36C 10px;
 }
 
-.reset-password{
-text-align: center;
-margin: auto;
-  width: 50%;
-  padding: 10px;
-}
+ .reset-password{
+     display: inline-block;
+ text-align: center;
+ margin: auto;
+   width: 50%;
+   padding: 10px;
+ }
 
 * {
     font-family: 'Didact Gothic', sans-serif;
   }
+
+  
 
 // .sign-in-botton-styles  {
 //     background-color: #1DD36C;

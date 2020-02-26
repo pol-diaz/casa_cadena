@@ -10,15 +10,15 @@ export const SignInView = () => (
 	<div>
 		<MyNavbar />
 		<img className="logo-styles my-0" src={logo} />
-		<h2 className="sign-in-title-styles mx-auto my-2">Inicio de Sesión</h2>
-		<div className="sign-in-description-text-styles my-2">
+		<h2 className="sign-in-title-styles mx-auto my-0">Inicio de Sesión</h2>
+		<div className="sign-in-description-text-styles my-0">
 			<p className="my-0 d-inline-block">¿Eres nuevo en Casa Cadena?</p>
 			<a className="create- my-0 d-inline-block" href="/register">
 				Crea una cuenta
 			</a>
 		</div>
 		<SignInForm />
-		<a className="reset-password" href="/resetPassword">
+		<a className="reset-password mx-auto my-0 d-inline-block" href="/resetPassword">
 			¿Olvidaste la Contraseña o Usuario?
 		</a>
 		<MyFooter />
