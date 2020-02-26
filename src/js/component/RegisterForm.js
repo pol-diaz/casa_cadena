@@ -17,6 +17,7 @@ export const RegisterForm = () => {
 
 	return (
 		<Card style={{ width: "18rem" }}>
+			<h2 className="sign-in-title-styles mx-auto my-auto">Crea tu cuenta</h2>
 			<Card.Body>
 				<Form noValidate validated={validated} onSubmit={handleSubmit}>
 					<Form.Group controlId="formBasicEmail">

@@ -8,7 +8,6 @@ export const RegisterView = () => {
 	return (
 		<div>
 			<MyNavbar />
-			<h2 className="sign-in-title-styles mx-auto my-2">Crea tu cuenta</h2>
 			<RegisterForm />
 			<MyFooter />
 		</div>
