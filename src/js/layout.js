@@ -10,6 +10,7 @@ import { resetPasswordEmailSentView } from "./views/resetPasswordEmailSentView";
 import { confirmNewPasswordView } from "./views/confirmNewPasswordView";
 import { changedPasswordView } from "./views/changedPasswordView";
 import { userRegisteredView } from "./views/userRegisteredView";
+import { postOrderView } from "./views/postOrderView";
 
 //create your first component
 export const Layout = () => {
@@ -30,6 +31,7 @@ export const Layout = () => {
 						<Route path="/confirm-new-password" component={confirmNewPasswordView} />
 						<Route path="/changed-password" component={changedPasswordView} />
 						<Route path="/user-registered" component={userRegisteredView} />
+						<Route path="/post-order" component={postOrderView} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
 				</ScrollToTop>
