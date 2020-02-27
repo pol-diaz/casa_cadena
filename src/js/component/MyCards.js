@@ -9,7 +9,7 @@ export const MyCards = props => {
 	return (
 		<div className="container">
 			<div className="row">
-				<div className="col-10 col-md-3 my-3 mx-auto">
+				<div className="col-10 col-md-3 my-auto mx-auto">
 					<Card className="border-0">
 						<Card.Img className="card-img-styles" variant="top" src={profile} />
 						<Card.Body>
@@ -22,7 +22,7 @@ export const MyCards = props => {
 						</Card.Body>
 					</Card>
 				</div>
-				<div className="col-10 col-md-3 my-3 mx-auto">
+				<div className="col-10 col-md-3 my-auto mx-auto">
 					<Card className="border-0">
 						<Card.Img className="card-img-styles" variant="top" src={phone} />
 						<Card.Body>
@@ -35,7 +35,7 @@ export const MyCards = props => {
 						</Card.Body>
 					</Card>
 				</div>
-				<div className="col-10 col-md-3 my-3 mx-auto">
+				<div className="col-10 col-md-3 my-auto mx-auto">
 					<Card className="border-0">
 						<Card.Img className="card-img-styles" variant="top" src={money} />
 						<Card.Body>
@@ -48,7 +48,7 @@ export const MyCards = props => {
 						</Card.Body>
 					</Card>
 				</div>
-				<div className="col-10 col-md-3 my-3 mx-auto">
+				<div className="col-10 col-md-3 my-auto mx-auto">
 					<Card className="border-0">
 						<Card.Img className="card-img-styles" variant="top" src={handshake} />
 						<Card.Body>
