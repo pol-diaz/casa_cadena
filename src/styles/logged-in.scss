@@ -9,3 +9,154 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.cc-navbar {
+  background-color: #6D1DD3 !important;
+}
+.cc-navlink {
+  color: white !important;
+}
+.carousel-styles {
+    position: relative;
+  margin: auto;
+  width: 100%;
+}
+.get-started-button {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    border: none !important;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #1DD36C;
+        border-radius: 10rem;
+        z-index: -2;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: darken(#1DD36C, 15%);
+        transition: all .3s;
+        border-radius: 10rem;
+        z-index: -1;
+    }
+    &:hover {
+        color: #fff;
+        &:before {
+            width: 100%;
+        }
+    }
+}
+.get-started-styles{
+    background-color: white;
+}
+.container-GetStarted{
+text-align: center;
+
+}
+
+.get-started-text {
+  color: #6D1DD3;
+}
+
+.banner-styles {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  margin: 0px;
+}
+.card-img-styles {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 1rem;
+}
+.card-title-styles {
+    text-align: center;
+    color: #1DD36C;
+}
+.card-description-styles {
+    text-align: center;
+    color: #6D1DD3;
+}
+.banner-h1-styles {
+  margin: 0px;
+  padding: 10% 0% 0% 0%;
+}
+.footer-styles{ 
+  position:absolute; 
+  bottom:1; 
+  width:100%; 
+  height:100px;
+  background-color: #6D1DD3 !important;
+}
+.jumbotron-footer-styles {
+    color: white;
+    background-color: #6D1DD3 !important;
+    text-align:center;
+}
+.mailto-styles {
+    color:white;
+    transition: color 1s;
+}
+.mailto-styles:hover {
+    color: #1DD36C;
+    text-decoration: none;
+}
+.social-icon-styles {
+    display: inline-block;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+    width: 2.5rem;
+}
+.logo-styles {
+    width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.sign-in-title-styles {
+    text-align: center;
+    color: #1DD36C;
+}
+.sign-in-description-text-styles {
+    text-align: center;
+    color: #6D1DD3;
+}
+.sign-in-button-styles {
+    text-align: center;
+}
+
+// .parallax {
+//   /* The image used */
+//   background-image: url('http://www.hdfondos.org/file/17849/728x410/16:9/new-york-manhattan-wall-street_806041814.jpg');
+
+//   /* Full height */
+//   height: 100%; 
+
+//   /* Create the parallax scrolling effect */
+//   background-attachment: fixed;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }

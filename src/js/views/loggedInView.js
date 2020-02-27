@@ -10,7 +10,6 @@ export const LoggedInView = () => {
 		<React.Fragment>
 			<LoggedInNavbar />
 			<MyLogInCards />
-			<MyFooter />
 		</React.Fragment>
 	);
 };
