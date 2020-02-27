@@ -41,8 +41,8 @@ export const RegisterForm = () => {
 					<Form.Group>
 						<Form.Check
 							required
-							label="Al continuar estoy de acerdo con las Condiciones de Servicio y Politica de Privacidad"
-							feedback="Debes aceptar los términos y condiciones para registrarte"
+							label="Al continuar estoy de acuerdo con las Condiciones de Servicio y Politica de Privacidad"
+							feedback="Debes aceptar los Términos y Condiciones para registrarte"
 						/>
 					</Form.Group>
 					<Button variant="primary" type="submit" className="sign-in-botton-styles" href="/user-registered">
