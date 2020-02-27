@@ -24,12 +24,22 @@ export const SignInForm = () => {
 	return (
 		<Card style={{ width: "18rem" }}>
 			<Card.Body>
-				<Form>
+				<Form action="{{ url_for('casacadena/submit_register') }}" method="post">
 					<Form.Group controlId="formBasicEmail">
-						<Form.Control className="signin-text" type="email" placeholder="Nombre de usuario o correo" />
+						<Form.Control
+							className="signin-text"
+							type="email"
+							placeholder="Nombre de usuario o correo"
+							name="signin_email"
+						/>
 					</Form.Group>
 					<Form.Group controlId="formBasicPassword">
-						<Form.Control className="signin-text" type="password" placeholder="Contraseña" />
+						<Form.Control
+							className="signin-text"
+							type="password"
+							placeholder="Contraseña"
+							name="signin_password"
+						/>
 					</Form.Group>
 					<Button variant="primary" type="submit" className="sign-in-botton-styles" href="/logged-in-view">
 						INICIAR SESIÓN

@@ -35,6 +35,7 @@ export const Layout = () => {
 
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
+					<Route path="/resetPassword" component={resetPasswordView} />{" "}
 				</ScrollToTop>
 			</BrowserRouter>
 		</div>
