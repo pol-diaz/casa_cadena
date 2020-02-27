@@ -31,7 +31,7 @@ export const RegisterForm = () => {
         // guardarError(false);
         // Creamos el nuevo producto, es recomendable meterlo en un try catch
         try {
-            const url = `http://localhost:4000/restaurant`;
+            const url = "https://3000-ee118b84-71fd-4ecc-ad47-90d453698b41.ws-us02.gitpod.io/casacadena/submit_signin";
             const resultado = await axios.post(url, register)
             if (resultado.status === 201) {
                 alert('todo fino');
