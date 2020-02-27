@@ -31,7 +31,7 @@ export const SignInForm = () => {
 					<Form.Group controlId="formBasicPassword">
 						<Form.Control className="signin-text" type="password" placeholder="Contraseña" />
 					</Form.Group>
-					<Button variant="primary" type="submit" className="sign-in-botton-styles">
+					<Button variant="primary" type="submit" className="sign-in-botton-styles" href="/logged-in-view">
 						INICIAR SESIÓN
 					</Button>
 				</Form>
