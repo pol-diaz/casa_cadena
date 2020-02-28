@@ -101,6 +101,22 @@ text-align: center;
 .banner-h1-styles {
   margin: 0px;
   padding: 10% 0% 0% 0%;
+.card-text-styles {
+    color: #6D1DD3;
+}
+.card-image-styles {
+    border-radius: 50%;
+    width: 20%;
+    float: left;
+}
+.card-styles {
+    width: 80%;
+    height: auto;
+    left: 50% !important;
+    transform: translate(-50%) !important;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 0 #BFB5CC;
+    display: inline-block;
 }
 .footer-styles{ 
   position:absolute; 
@@ -109,6 +125,7 @@ text-align: center;
   height:100px;
   background-color: #6D1DD3 !important;
 }
+<<<<<<< HEAD
 .jumbotron-footer-styles {
     color: white;
     background-color: #6D1DD3 !important;
@@ -160,3 +177,29 @@ text-align: center;
 //   background-repeat: no-repeat;
 //   background-size: cover;
 // }
+=======
+.nav {
+    background-color: #6D1DD3 !important;
+}
+.logged-in-navbar-styles {
+    justify-content: center !important;
+    background-color: #6D1DD3;
+}
+.navbar-img-styles {
+    width:15%;
+    position: relative;
+    left: 50% !important;
+    transform: translate(-50%) !important;
+}
+.logged-in-navbar-img-styles {
+    background-color: #6D1DD3;
+}
+.navbar-text-styles {
+    color: white;
+    transition: color 1s;
+}
+.navbar-text-styles:hover {
+    color: #1DD36C;
+    text-decoration: none;
+}
+>>>>>>> logged-in

@@ -6,10 +6,15 @@ import { AdCard } from "../component/AdCard";
 import { MyFooter } from "../component/MyFooter";
 import { MyLoggedInNavbar } from "../component/MyLoggedInNavbar";
 
-export const LoggedInView = () => {
+export const LoggedInViewCompras = () => {
 	return (
 		<div>
 			<MyLoggedInNavbar />
+			<AdCard />
+			<AdCard />
+			<AdCard />
+			<AdCard />
+			<AdCard />
 			<MyFooter className="footer-styles" />
 		</div>
 	);

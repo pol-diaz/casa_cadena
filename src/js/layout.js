@@ -12,6 +12,11 @@ import { changedPasswordView } from "./views/changedPasswordView";
 import { userRegisteredView } from "./views/userRegisteredView";
 import { LoggedInView } from "./views/loggedInView";
 import { terminosView } from "./views/terminosView";
+import { LoggedInViewVentas } from "./views/loggedInViewVentas";
+import { LoggedInViewCompras } from "./views/loggedInViewCompras";
+import { LoggedInViewVendedores } from "./views/loggedInViewVendedores";
+import { LoggedInViewHistorial } from "./views/loggedInViewHistorial";
+import { LoggedInViewAjustes } from "./views/loggedInViewAjustes";
 
 //create your first component
 export const Layout = () => {
@@ -28,6 +33,11 @@ export const Layout = () => {
 						<Route path="/register" component={RegisterView} />
 						<Route path="/signInView" component={SignInView} />
 						<Route path="/logged-in-view" component={LoggedInView} />
+						<Route path="/logged-in-view-ventas" component={LoggedInViewVentas} />
+						<Route path="/logged-in-view-compras" component={LoggedInViewCompras} />
+						<Route path="/logged-in-view-vendedores" component={LoggedInViewVendedores} />
+						<Route path="/logged-in-view-historial" component={LoggedInViewHistorial} />
+						<Route path="/logged-in-view-ajustes" component={LoggedInViewAjustes} />
 						<Route path="/resetPassword" component={resetPasswordView} />
 						<Route path="/resetPassword-emailSent" component={resetPasswordEmailSentView} />
 						<Route path="/confirm-new-password" component={confirmNewPasswordView} />
