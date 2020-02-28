@@ -18,9 +18,6 @@ export const MyNavbar = () => {
 					<Nav.Link className="cc-navlink" href="#como-funciona">
 						{"¿Cómo Funciona?"}
 					</Nav.Link>
-					<Nav.Link className="cc-navlink" href="#tutoriales">
-						{"Tutoriales"}
-					</Nav.Link>
 					<Nav.Link className="cc-navlink" href="/signInView">
 						{"Inicia Sesión"}
 					</Nav.Link>
