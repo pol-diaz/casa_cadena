@@ -18,6 +18,9 @@ export const AdCard = () => {
 					Usuario: <span className="card-text-styles"> Mariperez</span>
 				</Card.Subtitle>
 				<Card.Subtitle className="row mb-2 text-muted card-subtitle-styles">
+					Monto: <span className="card-text-styles"> $ 100</span>
+				</Card.Subtitle>
+				<Card.Subtitle className="row mb-2 text-muted card-subtitle-styles">
 					Tasa: <span className="card-text-styles"> 75.000,00 BsS</span>
 				</Card.Subtitle>
 				<Card.Subtitle className="row mb-2 text-muted card-subtitle-styles">
