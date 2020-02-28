@@ -21,28 +21,25 @@ export const RegisterForm = () => {
 		console.log(register);
 	};
 
-	const handleSubmit = event => {
+	async function handleSubmit(event) {
 		e.preventDefault();
-        //Validamos que los campos esten llenos 
-        // if (nombrePlatillo === '' || precioPlatillo === '' || categoria === '') {
-        //     guardarError(true)
-        //     return;
-        // }
-        // guardarError(false);
-        // Creamos el nuevo producto, es recomendable meterlo en un try catch
-        try {
-            const url = "https://3000-ee118b84-71fd-4ecc-ad47-90d453698b41.ws-us02.gitpod.io/casacadena/submit_signin";
-            const resultado = await axios.post(url, register)
-            if (resultado.status === 201) {
-                alert('todo fino');
-                
-            }
-        } catch (err) {
-            alert('todo fallo');
-        }
-
-		
-	};
+		//Validamos que los campos esten llenos
+		// if (nombrePlatillo === '' || precioPlatillo === '' || categoria === '') {
+		//     guardarError(true)
+		//     return;
+		// }
+		// guardarError(false);
+		// Creamos el nuevo producto, es recomendable meterlo en un try catch
+		try {
+			const url = "https://3000-ee118b84-71fd-4ecc-ad47-90d453698b41.ws-us02.gitpod.io/casacadena/submit_signin";
+			const resultado = await axios.post(url, register);
+			if (resultado.status === 201) {
+				alert("todo fino");
+			}
+		} catch (err) {
+			alert("todo fallo");
+		}
+	}
 
 	return (
 		<Card style={{ width: "18rem" }}>
@@ -56,7 +53,12 @@ export const RegisterForm = () => {
 						<Form.Control type="text" placeholder="Nombre de Usuario" />
 					</Form.Group>
 					<Form.Group controlId="formBasicuser">
-						<Form.Control type="text" placeholder="Cedula" name="register_document_id" onChange={handleChange} />
+						<Form.Control
+							type="text"
+							placeholder="Cedula"
+							name="register_document_id"
+							onChange={handleChange}
+						/>
 					</Form.Group>
 					<Form.Group controlId="formBasicpassword">
 						<Form.Control

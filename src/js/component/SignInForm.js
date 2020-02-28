@@ -41,7 +41,11 @@ export const SignInForm = () => {
 							name="signin_password"
 						/>
 					</Form.Group>
-					<Button variant="primary" type="submit" className="sign-in-botton-styles" href="/logged-in-view">
+					<Button
+						variant="primary"
+						type="submit"
+						className="sign-in-botton-styles"
+						href="/logged-in-view-ventas">
 						INICIAR SESIÓN
 					</Button>
 				</Form>
