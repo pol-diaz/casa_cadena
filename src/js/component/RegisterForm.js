@@ -45,6 +45,9 @@ export const RegisterForm = () => {
 							feedback="Debes aceptar los Términos y Condiciones para registrarte"
 						/>
 					</Form.Group>
+					<a className="Terminos my-5 mx-auto" href="/terminos">
+						Terminos y Condiciones
+					</a>
 					<Button variant="primary" type="submit" className="sign-in-botton-styles" href="/user-registered">
 						CREAR CUENTA
 					</Button>
