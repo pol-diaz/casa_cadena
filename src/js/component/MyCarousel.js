@@ -1,9 +1,9 @@
 import { Card } from "react-bootstrap";
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import banner1 from '../../img/banner1.jpg';
-import banner2 from '../../img/banner2.jpg';
-import banner3 from '../../img/banner3.jpg';
+import banner1 from "../../img/banner1.jpg";
+import banner2 from "../../img/banner2.jpg";
+import banner3 from "../../img/banner3.jpg";
 
 export const MyCarousel = props => {
 	return (
