@@ -52,13 +52,8 @@ export const RegisterForm = () => {
 					<Form.Group controlId="formBasicEmail">
 						<Form.Control type="email" placeholder="Email" name="register_email" onChange={handleChange} />
 					</Form.Group>
-					<Form.Group controlId="formBasicuser">
-						<Form.Control
-							type="text"
-							placeholder="Nombre de Usuario"
-							name="register_username"
-							onChange={handleChange}
-						/>
+					<Form.Group controlId="formBasicPassword">
+						<Form.Control type="text" placeholder="Nombre de Usuario" />
 					</Form.Group>
 					<Form.Group controlId="formBasicuser">
 						<Form.Control type="text" placeholder="Cedula" name="register_document_id" onChange={handleChange} />
@@ -71,11 +66,11 @@ export const RegisterForm = () => {
 							onChange={handleChange}
 						/>
 					</Form.Group>
-					<Form.Group controlId="formBasiccity">
-						<Form.Control type="text" placeholder="Ciudad" name="register_city" onChange={handleChange} />
+					<Form.Group controlId="formBasicPassword">
+						<Form.Control type="text" placeholder="Ciudad" />
 					</Form.Group>
-					<Form.Group controlId="formGridState">
-						<Form.Control as="select" name="signin_country">
+					<Form.Group className="country-input-styles" controlId="formGridState">
+						<Form.Control as="select">
 							<option>Venezuela</option>
 							<option>Colombia</option>
 						</Form.Control>
