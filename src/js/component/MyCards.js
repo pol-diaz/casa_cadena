@@ -9,54 +9,46 @@ export const MyCards = props => {
 	return (
 		<div className="container">
 			<div className="row">
-				<div className="col-10 col-md-3 my-auto mx-auto">
+				<div className="col-10 col-md-3 my-0 mx-auto">
 					<Card className="border-0">
 						<Card.Img className="card-img-styles" variant="top" src={profile} />
 						<Card.Body>
-							<Card.Title className="card-title-styles">{"titulo"}</Card.Title>
+							<Card.Title className="card-title-styles">{"Escoge Un Anuncio"}</Card.Title>
 							<Card.Text className="card-description-styles">
-								{
-									"Some quick example text to build on the card title and make up the bulk of the card's content."
-								}
+								{"Selecciona el anuncio con la oferta más atractiva."}
 							</Card.Text>
 						</Card.Body>
 					</Card>
 				</div>
-				<div className="col-10 col-md-3 my-auto mx-auto">
+				<div className="col-10 col-md-3 my-0 mx-auto">
 					<Card className="border-0">
 						<Card.Img className="card-img-styles" variant="top" src={phone} />
 						<Card.Body>
-							<Card.Title className="card-title-styles">{"titulo"}</Card.Title>
+							<Card.Title className="card-title-styles">{"Contacta Al Anunicante"}</Card.Title>
 							<Card.Text className="card-description-styles">
-								{
-									"Some quick example text to build on the card title and make up the bulk of the card's content."
-								}
+								{"Comunícate con el vendedor o comprador que publicó el anuncio seleccionado."}
 							</Card.Text>
 						</Card.Body>
 					</Card>
 				</div>
-				<div className="col-10 col-md-3 my-auto mx-auto">
+				<div className="col-10 col-md-3 my-0 mx-auto">
 					<Card className="border-0">
 						<Card.Img className="card-img-styles" variant="top" src={money} />
 						<Card.Body>
-							<Card.Title className="card-title-styles">{"titulo"}</Card.Title>
+							<Card.Title className="card-title-styles">{"Realiza el Pago"}</Card.Title>
 							<Card.Text className="card-description-styles">
-								{
-									"Some quick example text to build on the card title and make up the bulk of the card's content."
-								}
+								{"Efectúa el pago correspondiente para poder recibir el dinero del anuncio."}
 							</Card.Text>
 						</Card.Body>
 					</Card>
 				</div>
-				<div className="col-10 col-md-3 my-auto mx-auto">
+				<div className="col-10 col-md-3 my-0 mx-auto">
 					<Card className="border-0">
 						<Card.Img className="card-img-styles" variant="top" src={handshake} />
 						<Card.Body>
-							<Card.Title className="card-title-styles">{"titulo"}</Card.Title>
+							<Card.Title className="card-title-styles">{"Califícalo"}</Card.Title>
 							<Card.Text className="card-description-styles">
-								{
-									"Some quick example text to build on the card title and make up the bulk of the card's content."
-								}
+								{"Califica la reputación de la persona con la que has negociado la compra o venta."}
 							</Card.Text>
 						</Card.Body>
 					</Card>
