@@ -6,25 +6,47 @@ import { MyNavbar } from "../component/MyNavbar";
 import { MyFooter } from "../component/MyFooter";
 
 export const SignInForm = () => {
-	function SignInForm() {
-		const [validated, setValidated] = useState(false);
 
-		const handleSubmit = event => {
-			const form = event.currentTarget;
-			if (form.checkValidity() === false) {
-				event.preventDefault();
-				event.stopPropagation();
-			}
+		const [signin, setSignIn] = useState({
+		signin_email: "",
+		signin_password: ""
+	});
+	const [error, seterror] = useState(false);
 
-			setValidated(true);
-			render(<SignInForm />);
-		};
-	}
+	const handleChange = e => {
+		setSignIn({
+			...signin,
+			[e.target.name]: e.target.value
+		});
+		console.log(signin);
+	};
 
+	const handleSubmit = event => {
+		e.preventDefault();
+        //Validamos que los campos esten llenos 
+        // if (nombrePlatillo === '' || precioPlatillo === '' || categoria === '') {
+        //     guardarError(true)
+        //     return;
+        // }
+        // guardarError(false);
+        // Creamos el nuevo producto, es recomendable meterlo en un try catch
+        try {
+            const url = "https://3000-ee118b84-71fd-4ecc-ad47-90d453698b41.ws-us02.gitpod.io/casacadena/submit_signin";
+            const resultado = await axios.post(url, signin)
+            if (resultado.status === 201) {
+                alert('todo fino');
+                
+            }
+        } catch (err) {
+            alert('todo fallo');
+        }
+
+		
+	};
 	return (
 		<Card style={{ width: "18rem" }}>
 			<Card.Body>
-				<Form action="{{ url_for('casacadena/submit_register') }}" method="post">
+				<Form onSubmit={handleSubmit}>
 					<Form.Group controlId="formBasicEmail">
 						<Form.Control
 							className="signin-text"
