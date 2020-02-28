@@ -11,6 +11,7 @@ import { confirmNewPasswordView } from "./views/confirmNewPasswordView";
 import { changedPasswordView } from "./views/changedPasswordView";
 import { userRegisteredView } from "./views/userRegisteredView";
 import { LoggedInView } from "./views/loggedInView";
+import { terminosView } from "./views/terminosView";
 
 //create your first component
 export const Layout = () => {
@@ -32,7 +33,7 @@ export const Layout = () => {
 						<Route path="/confirm-new-password" component={confirmNewPasswordView} />
 						<Route path="/changed-password" component={changedPasswordView} />
 						<Route path="/user-registered" component={userRegisteredView} />
-
+						<Route path="/terminos" component={terminosView} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
 					<Route path="/resetPassword" component={resetPasswordView} />{" "}
