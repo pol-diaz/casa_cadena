@@ -26,8 +26,8 @@ export const MyFooter = () => {
 						</a>
 					</div>
 
-					<p className="mt-5">©2019, Casa Cadena, LLC.</p>
-					<p>Todos los derechos reservados</p>
+					<p className="jumbotron-footer-syles mt-5">©2019, Casa Cadena, LLC.</p>
+					<p className="jumbotron-footer-syles">Todos los derechos reservados</p>
 				</Container>
 			</Jumbotron>
 		</footer>

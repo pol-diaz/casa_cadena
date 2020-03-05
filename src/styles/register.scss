@@ -1,10 +1,10 @@
-.link{
-    color: #1DD36C;
-    text-decoration: none;
-    transition: color 1s;
+.sign-in-botton-styles {
+    width: 100%;
 }
-
-.link:hover{
-    color: darkorchid;
-    text-decoration: none;
+.country-input-styles {
+    width: 100%;
+    color: #1DD36C !important;
+}
+::placeholder {
+    color: #1DD36C !important;
 }

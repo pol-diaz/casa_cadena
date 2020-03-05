@@ -1,23 +1,12 @@
-body {
-    background-color: #E5E5E5;
-}
-.card {
-    position:relative;
-    top:10%;
-    left:50%;
-    transform:translate(-50%);
-    margin: 64px 0px;
-    border:#DEDEDE;
-}
-.sign-in-botton-styles {
-    border:#DEDEDE;
+p {
+    text-align: justify;
 }
 
-::placeholder {
-    color: #1DD36C !important;
-}
+* {
+    font-family: 'Didact Gothic', sans-serif;
+  }
 
-.sign-in-botton-styles {
+  .Listo {
     display: inline-block;
     margin-left: 30px;
     margin-right: auto;
@@ -62,38 +51,3 @@ body {
         }
     }
 }
-
-.breakLine {
-    border-bottom: #1DD36C 10px;
-}
-
- .reset-password{
-     display: inline-block;
- text-align: center;
- margin: auto;
-   width: 50%;
-   padding: 10px;
- }
-
-* {
-    font-family: 'Didact Gothic', sans-serif;
-  }
-.create-account-styles {
-    color:#6D1dd3;
-    transition: color 1s;
-}
-.create-account-styles:hover {
-    color: #1DD36C;
-    text-decoration: none;
-}
-  
-
-// .sign-in-botton-styles  {
-//     background-color: #1DD36C;
-
-//     & :hover{
-//         background-color: darken(#1DD36C, 15%) !important;
-//     }
-
-// }
-

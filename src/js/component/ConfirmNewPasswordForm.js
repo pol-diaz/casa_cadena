@@ -2,8 +2,8 @@ import React from "react";
 import "../../styles/sign-in.scss";
 import { Col, Form, InputGroup, Button, Card } from "react-bootstrap";
 
-export const ResetPasswordForm = () => {
-	function ResetPasswordForm() {
+export const ConfirmNewPasswordForm = () => {
+	function ConfirmNewPasswordForm() {
 		const [validated, setValidated] = useState(false);
 
 		const handleSubmit = event => {
@@ -14,7 +14,7 @@ export const ResetPasswordForm = () => {
 			}
 
 			setValidated(true);
-			render(<ResetPasswordForm />);
+			render(<ConfirmNewPasswordForm />);
 		};
 	}
 
@@ -22,15 +22,14 @@ export const ResetPasswordForm = () => {
 		<Card style={{ width: "18rem" }}>
 			<Card.Body>
 				<Form>
-					<Form.Group controlId="formBasicEmail">
-						<Form.Control className="signin-text" type="email" placeholder="Correo electrónico" />
+					<Form.Group controlId="formBasicPassword">
+						<Form.Control type="password" placeholder="Nueva Contraseña" />
 					</Form.Group>
-					<Button
-						variant="primary"
-						type="submit"
-						className="reset-password-button"
-						href="/resetPassword-emailSent">
-						RESETEAR CLAVE
+					<Form.Group controlId="formBasicPassword">
+						<Form.Control type="password" placeholder="Confirmar Nueva Contraseña" />
+					</Form.Group>
+					<Button variant="primary" type="submit" className="reset-password-button" href="/changed-password">
+						CAMBIAR CLAVE
 					</Button>
 				</Form>
 			</Card.Body>
