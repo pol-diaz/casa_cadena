@@ -13,7 +13,7 @@ export const SignInView = () => (
 		<h2 className="sign-in-title-styles mx-auto my-0">Inicio de Sesión</h2>
 		<div className="sign-in-description-text-styles my-0">
 			<p className="my-0 d-inline-block">¿Eres nuevo en Casa Cadena?</p>
-			<a className="create- my-0 d-inline-block" href="/register">
+			<a className="create-account-styles my-0 d-inline-block" href="/register">
 				Crea una cuenta
 			</a>
 		</div>

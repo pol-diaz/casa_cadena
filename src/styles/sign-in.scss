@@ -78,7 +78,14 @@ body {
 * {
     font-family: 'Didact Gothic', sans-serif;
   }
-
+.create-account-styles {
+    color:#6D1dd3;
+    transition: color 1s;
+}
+.create-account-styles:hover {
+    color: #1DD36C;
+    text-decoration: none;
+}
   
 
 // .sign-in-botton-styles  {
