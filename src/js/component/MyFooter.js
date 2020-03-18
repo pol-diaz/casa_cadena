@@ -25,9 +25,8 @@ export const MyFooter = () => {
 							<img className="social-icon-styles" src={Twitter} />
 						</a>
 					</div>
-
-					<p className="jumbotron-footer-syles mt-5">©2019, Casa Cadena, LLC.</p>
-					<p className="jumbotron-footer-syles">Todos los derechos reservados</p>
+					<p className="jumbotron-footer-syles mx-auto mt-5">©2019, Casa Cadena, LLC.</p>
+					<p className="jumbotron-footer-syles mx-auto">Todos los derechos reservados</p>
 				</Container>
 			</Jumbotron>
 		</footer>
