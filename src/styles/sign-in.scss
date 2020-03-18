@@ -14,16 +14,21 @@ body {
 }
 
 ::placeholder {
-    color: #1DD36C !important;
+    color: #9b9b9b !important;
+}
+
+.sign-in-description-text-styles {
+    margin-bottom: 0px;
 }
 
 .sign-in-botton-styles {
     display: inline-block;
-    margin-left: 30px;
+    margin-left: auto;
     margin-right: auto;
     padding: .75rem 1.25rem;
     border-radius: 10rem;
     border: none !important;
+    background-color: #1DD36C;
     color: #fff;
     text-transform: uppercase;
     font-size: 1rem;
@@ -68,32 +73,23 @@ body {
 }
 
  .reset-password{
-     display: inline-block;
- text-align: center;
- margin: auto;
-   width: 50%;
-   padding: 10px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
  }
+
+p {
+    color: #9b9b9b;
+}
 
 * {
     font-family: 'Didact Gothic', sans-serif;
   }
 .create-account-styles {
-    color:#6D1dd3;
+    color:#1DD36C;
     transition: color 1s;
 }
 .create-account-styles:hover {
-    color: #1DD36C;
+    color: #15994e;
     text-decoration: none;
 }
-  
-
-// .sign-in-botton-styles  {
-//     background-color: #1DD36C;
-
-//     & :hover{
-//         background-color: darken(#1DD36C, 15%) !important;
-//     }
-
-// }
-

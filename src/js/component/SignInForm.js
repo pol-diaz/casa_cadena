@@ -22,7 +22,7 @@ export const SignInForm = () => {
 	}
 
 	return (
-		<Card style={{ width: "18rem" }}>
+		<Card className="my-0 sign-in-form-styles" style={{ width: "18rem" }}>
 			<Card.Body>
 				<Form action="{{ url_for('casacadena/submit_register') }}" method="post">
 					<Form.Group controlId="formBasicEmail">
